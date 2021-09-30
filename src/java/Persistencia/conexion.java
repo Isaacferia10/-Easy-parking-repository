@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package Persistencia;
 
 /**
  *
@@ -10,7 +11,6 @@
  */
 import java.sql.*;
 public class conexion {
-    
     public Connection con=null;
     private Statement stmt=null;
     private ResultSet rs=null;
@@ -20,16 +20,16 @@ public class conexion {
             Class.forName("com.mysql.jdbc.Driver");
             con=DriverManager.getConnection("jdbc:mysql://localhost:3306/easy_parking","root","");
             if(con != null){
-                System.out.println("conexion correctar");
+                System.out.println("conexion correcta");
             }
         }catch(Exception e){
             System.err.println("error1:" + e);
 
         }
     }
-    public ResultSet sonsultarSQl(String sentencia){
+    public ResultSet consultarSQl(String sentencia){
         try{
-        stmt=con.createStatement();
+            stmt=con.createStatement();
         rs=stmt.executeQuery(sentencia);
         }catch(SQLException sqlex){
             System.out.println(sqlex.getMessage());
