@@ -5,7 +5,7 @@
             <url>src/java/logica/prueba.java</url>
             <bookmark id="1">
                 <name/>
-                <line>33</line>
+                <line>26</line>
                 <key/>
             </bookmark>
         </file>
@@ -13,10 +13,9 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Administrador/Documents/NetBeansProjects/easyparking1/src/java/logica/perfiles.java</file>
+            <file>file:/C:/Users/Administrador/Documents/NetBeansProjects/easyparking1/src/java/logica/horaactual.java</file>
             <file>file:/C:/Users/Administrador/Documents/NetBeansProjects/easyparking1/src/java/logica/registro.java</file>
-            <file>file:/C:/Users/Administrador/Documents/NetBeansProjects/easyparking1/src/java/Persistencia/conexion.java</file>
             <file>file:/C:/Users/Administrador/Documents/NetBeansProjects/easyparking1/web/peticiones.jsp</file>
-            <file>file:/C:/Users/Administrador/Documents/NetBeansProjects/easyparking1/web/index.html</file>
             <file>file:/C:/Users/Administrador/Documents/NetBeansProjects/easyparking1/src/java/logica/prueba.java</file>
         </group>
     </open-files>
