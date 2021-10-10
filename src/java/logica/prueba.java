@@ -19,8 +19,12 @@ public class prueba {
      * @param args the command line arguments
      */
     public static void main(String[] args)  {
-        String hora = new horaactual().hora();
-        System.out.println(hora);
+//        String hora = new horaactual().hora();
+//        System.out.println(hora);
+          registro r = new registro();
+          System.out.println(r.listarRegistro());
+          
+          
     }
     
 }

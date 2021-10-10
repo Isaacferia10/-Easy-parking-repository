@@ -1,0 +1,277 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css\" integrity=\"sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l\" crossorigin=\"anonymous\">\n");
+      out.write("        <script src = \"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js\"></script>  \n");
+      out.write("        <title>home</title>\n");
+      out.write("    </head>\n");
+      out.write("    <style  type=\"text/css\">\n");
+      out.write("        \n");
+      out.write("    </style>\n");
+      out.write("    <body>\n");
+      out.write("        <div class=\"container-fluid\" ng-app = \"Easyparking\" ng-controller = \"registrosController as cn\">\n");
+      out.write("            <div> <h3>Easy Parking</h3></div>\n");
+      out.write("            <br>\n");
+      out.write("            <div class=\"row\">\n");
+      out.write("                <div class=\"col-sm-8\" >\n");
+      out.write("                    \n");
+      out.write("                    <div class=\"card\" >\n");
+      out.write("                        <div class=\"text-center\" style=\"margin: 10px;\"><h5>Ingreso de Datos</h5></div>\n");
+      out.write("                    <form style=\"margin: 10px;\">\n");
+      out.write("                        <div class=\"form-group row\">\n");
+      out.write("                          <label for=\"staticEmail\" class=\"col-sm-2 col-form-label\">Lugar</label>\n");
+      out.write("                          <div class=\"col-sm-10\">\n");
+      out.write("                            <input type=\"number\" class=\"form-control\" placeholder=\"ingrese el lugar de parqueo\" ng-model=\"cn.lugar\" required>\n");
+      out.write("                          </div>\n");
+      out.write("                        </div>\n");
+      out.write("                        <div class=\"form-group row\">\n");
+      out.write("                          <label for=\"inputPassword\" class=\"col-sm-2 col-form-label\">Matricula</label>\n");
+      out.write("                          <div class=\"col-sm-10\">\n");
+      out.write("                            <input type=\"text\" class=\"form-control\" id=\"inputPassword\" placeholder=\"Ingrese la matricula del vehiculo\" ng-model=\"cn.matricula\" required>\n");
+      out.write("                          </div>\n");
+      out.write("                        </div>\n");
+      out.write("                        <div class=\"form-group row\">\n");
+      out.write("                            <label for=\"inputPassword\" class=\"col-sm-2 col-form-label\">Tipo de vehiculo</label>\n");
+      out.write("                            <div class=\"col-sm-10\">\n");
+      out.write("                                <select class=\"form-select form-select-mb-8\" aria-label=\".form-select-sm example\" ng-model=\"cn.tipovehiculo\" required>\n");
+      out.write("                                    <option selected>Seleccione el tipo de vehiculo</option>\n");
+      out.write("                                    <option value=\"1\">Automovil</option>\n");
+      out.write("                                    <option value=\"2\">Motocicleta</option>\n");
+      out.write("                                    <option value=\"3\">Bicicleta</option>\n");
+      out.write("                                  </select>\n");
+      out.write("                            </div>\n");
+      out.write("                        </div>\n");
+      out.write("                        <div class=\"form-group row\">\n");
+      out.write("                            <label for=\"inputPassword\" class=\"col-sm-2 col-form-label\">Hora de entrada</label>\n");
+      out.write("                            <div class=\"col-sm-10\">\n");
+      out.write("                              <input type=\"time\" class=\"form-control\" id=\"inputPassword\" placeholder=\"Ingrese la hora de entrada del vehiculo\" ng-model=\"cn.hentrada\" required>\n");
+      out.write("                            </div>\n");
+      out.write("                          </div>\n");
+      out.write("                          <div class=\"form-group row\">\n");
+      out.write("                            <label for=\"inputPassword\" class=\"col-sm-2 col-form-label\">Hora Salida</label>\n");
+      out.write("                            <div class=\"col-sm-10\">\n");
+      out.write("                              <input type=\"time\" class=\"form-control\" id=\"inputPassword\" placeholder=\"Ingrese la hora de salida del vehiculo\" ng-model=\"cn.hsalida\" required>\n");
+      out.write("                            </div>\n");
+      out.write("                          </div>\n");
+      out.write("                          <div class=\"form-group row\">\n");
+      out.write("                            <label for=\"inputPassword\" class=\"col-sm-2 col-form-label\">Valor de Parqueo</label>\n");
+      out.write("                            <div class=\"col-sm-10\">\n");
+      out.write("                              <input type=\"number\" class=\"form-control\" id=\"inputPassword\" placeholder=\"Ingrese el valor del parqueo\" ng-model=\"cn.valorparqueo\" required>\n");
+      out.write("                            </div>\n");
+      out.write("                          </div>\n");
+      out.write("                          <div class=\"form-group row\">\n");
+      out.write("                            <label for=\"inputPassword\" class=\"col-sm-2 col-form-label\">Fecha</label>\n");
+      out.write("                            <div class=\"col-sm-10\">\n");
+      out.write("                              <input type=\"date\" class=\"form-control\" id=\"inputPassword\" placeholder=\"Ingrese la fecha de parquo\" ng-model=\"cn.fecha\" required>\n");
+      out.write("                            </div>\n");
+      out.write("                          </div>\n");
+      out.write("                      </form>\n");
+      out.write("                    </div>\n");
+      out.write("                        \n");
+      out.write("                </div>\n");
+      out.write("                \n");
+      out.write("                \n");
+      out.write("                <div class=\"col-sm-4\">\n");
+      out.write("                    <div class=\"col-sm-6\">\n");
+      out.write("                        <div class=\"card\" >\n");
+      out.write("                            <div class=\"text-center\" style=\"margin: 10px;\"><h5>Ingreso de Datos</h5></div>\n");
+      out.write("                            <button type=\"button\" style=\"margin: 10px;\" class=\"btn btn-outline-primary\"  ng-click=\"cn.guardarRegistro()\">Guardar</button>\n");
+      out.write("                            <button type=\"button\" style=\"margin: 10px;\" class=\"btn btn-outline-success\"  ng-click=\"cn.listarRegistro()\">Listar</button>\n");
+      out.write("                            <button type=\"button\" style=\"margin: 10px;\" class=\"btn btn-outline-warning\"  ng-click=\"cn.actualizarRegistro()\">Actualizar</button>\n");
+      out.write("                            <br>\n");
+      out.write("                            <br>\n");
+      out.write("                            <button type=\"button\" style=\"margin: 10px;\" class=\"btn btn-outline-danger\"  ng-click=\"cn.eliminarRegistro()\">Eliminar</button>\n");
+      out.write("                                  \n");
+      out.write("                        </div>          \n");
+      out.write("                            \n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("                \n");
+      out.write("            </div>\n");
+      out.write("            <br>\n");
+      out.write("            <div class=\"row\">\n");
+      out.write("                <div class=\"col-sm-10\" >\n");
+      out.write("                    <div class=\"card\">\n");
+      out.write("                        <table class=\"table\">\n");
+      out.write("                            <thead class=\"table-dark\" style=\"text-align: center;\">\n");
+      out.write("                              <td>Id</td>\n");
+      out.write("                              <td>Lugar</td>\n");
+      out.write("                              <td>Matricula</td>\n");
+      out.write("                              <td>Tipo</td>\n");
+      out.write("                              <td>Hora Entrada</td>\n");
+      out.write("                              <td>Hora Salida</td>\n");
+      out.write("                              <td>Valor Parqueo</td>\n");
+      out.write("                            </thead>\n");
+      out.write("                            <tbody>\n");
+      out.write("                              <!-- base de datos -->\n");
+      out.write("                              <tr ng-repeat = \"registro in cn.registros\">  \n");
+      out.write("                                    <td>{{ regsitro.id}}</td>  \n");
+      out.write("                                    <td>{{ regsitro.lugar}}</td>  \n");
+      out.write("                                    <td>{{ regsitro.matricula}}</td>  \n");
+      out.write("                                    <td>{{ regsitro.tipovehiculo}}</td>  \n");
+      out.write("                                    <td>{{ regsitro.hentrada}}</td>  \n");
+      out.write("                                    <td>{{ regsitro.hsalida}}</td>  \n");
+      out.write("                                    <td>{{ regsitro.fecha}}</td>  \n");
+      out.write("                                    <td>{{ regsitro.valorparqueo}}</td>  \n");
+      out.write("                                </tr> \n");
+      out.write("                            </tbody>\n");
+      out.write("                          </table>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("                <div class=\"col-sm-2\" >\n");
+      out.write("                    \n");
+      out.write("                        <div class=\"text-center\">\n");
+      out.write("                            <img src=\"https://i.ibb.co/s6qbdJJ/parking.jpg\" style=\"width: 200px;\" class=\"rounded\" alt=\"...\">\n");
+      out.write("                          </div>\n");
+      out.write("                    \n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("    </body>\n");
+      out.write("    <script>\n");
+      out.write("        var app = angular.module('Easyparking',[]);\n");
+      out.write("        app.controller('registrosController',['$http',controladorRegistros]);\n");
+      out.write("        function controladorRegistros($http){\n");
+      out.write("            var cn = this;\n");
+      out.write("            cn.listarRegistro = function () {\n");
+      out.write("                var url = \"peticiones.jps\";\n");
+      out.write("                var params = {\n");
+      out.write("                    proceso: \"listarRegsitro\" \n");
+      out.write("                };\n");
+      out.write("            };\n");
+      out.write("            $http({\n");
+      out.write("                method: 'POST',\n");
+      out.write("                url: 'peticiones.jsp',\n");
+      out.write("                params: params\n");
+      out.write("            }).then(function (res){\n");
+      out.write("                cn.registros = res.data.Registros;\n");
+      out.write("            });\n");
+      out.write("            cn.guardarRegistro = function(){\n");
+      out.write("                var registro = {\n");
+      out.write("                    proceso: \"guardarRegistro\",\n");
+      out.write("                    lugar: cn.lugar,\n");
+      out.write("                    matricula: cn.matricula,\n");
+      out.write("                    vehiculo: cn.tipovehiculo,\n");
+      out.write("                    hentrada: cn.hentrada,\n");
+      out.write("                    hsalida: cn.hsalida,\n");
+      out.write("                    fecha: cn.fecha,\n");
+      out.write("                    Vparqueo: cn.valorparqueo    \n");
+      out.write("                };\n");
+      out.write("                console.log(registro);\n");
+      out.write("                $hppt({\n");
+      out.write("                    method: 'POST',\n");
+      out.write("                    url: 'peticiones.jsp',\n");
+      out.write("                    params: registro\n");
+      out.write("                }).then(function (res){\n");
+      out.write("                    if(res.data.ok === true){\n");
+      out.write("                        if(res.data[registro.proceso]=== true){\n");
+      out.write("                            alert(\"Guardado con exito\");\n");
+      out.write("                        }else{alert(\"Error al guardar, verifique los datos\");}\n");
+      out.write("                    }else{alert(res.data.errorMsg);}\n");
+      out.write("                });\n");
+      out.write("            };\n");
+      out.write("            cn.elimarRegistro = function(){\n");
+      out.write("                var registro ={\n");
+      out.write("                    proceso:\"eliminarRegistro\",\n");
+      out.write("                    id: cn.id\n");
+      out.write("                };\n");
+      out.write("                $http({\n");
+      out.write("                    method: 'POST',\n");
+      out.write("                    url: 'peticiones.jsp',\n");
+      out.write("                    params: registro\n");
+      out.write("                }).then(function (res){\n");
+      out.write("                    if(res.data.ok === true){\n");
+      out.write("                        if(res.data[registro.proceso] === true){\n");
+      out.write("                            alert(\"Elimado con exito\");\n");
+      out.write("                        }else{alert(\"Error al eliminar\");}\n");
+      out.write("                    }else{alert(res.data.errorMsg);}\n");
+      out.write("                });\n");
+      out.write("            };\n");
+      out.write("            cn.actualizarRegistro= function(){\n");
+      out.write("                var registro ={\n");
+      out.write("                    proceso: \"actualizarRegistro\",\n");
+      out.write("                    id:cn.id,\n");
+      out.write("                    lugar: cn.lugar,\n");
+      out.write("                    matricula: cn.matricula,\n");
+      out.write("                    vehiculo: cn.tipovehiculo,\n");
+      out.write("                    hentrada: cn.hentrada,\n");
+      out.write("                    hsalida: cn.hsalida,\n");
+      out.write("                    fecha: cn.fecha,\n");
+      out.write("                    Vparqueo: cn.valorparqueo\n");
+      out.write("                };\n");
+      out.write("                $hppt({\n");
+      out.write("                    method: 'POST',\n");
+      out.write("                    url: 'peticiones.jsp',\n");
+      out.write("                    params: registro\n");
+      out.write("                }).then(function (res){\n");
+      out.write("                    if(res.data.ok === true){\n");
+      out.write("                        if(res.data[registro.proceso]=== true){\n");
+      out.write("                            alert(\"ACtulizado con exito\");\n");
+      out.write("                        }else{alert(\"Error al actulizar, verifique los datos\");}\n");
+      out.write("                    }else{alert(res.data.errorMsg);}\n");
+      out.write("                });\n");
+      out.write("            };\n");
+      out.write("            \n");
+      out.write("        }\n");
+      out.write("    </script>\n");
+      out.write("</html>\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}

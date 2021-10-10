@@ -164,5 +164,5 @@ public class registro {
             System.out.println("error Consulta: "+e.getMessage());}
         return listaregistro;
     }
-
+    
 }

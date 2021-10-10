@@ -17,7 +17,7 @@
 <% 
     String respuesta = "{";
         List<String> tareas = Arrays.asList(new String[]{
-            "actulizarRegistro",
+            "actualizarRegistro",
             "eliminarRegistro",
             "listarRegistro",
             "guardarRegistro"
@@ -30,14 +30,14 @@
         respuesta += "\"ok\": true,";
         
         if(proceso.equals("guardarRegistro")){
-            int id = Integer.getInteger(request.getParameter("id"));
+//            int id = Integer.getInteger(request.getParameter("id"));
             int lugar = Integer.getInteger(request.getParameter("lugar"));
             String matricula = request.getParameter("matricula");
             String vehiculo = request.getParameter("vehiculo");
-            String hentrada = request.getParameter("hora_entrada");
-            String hsalida = request.getParameter("hora_salida");
+            String hentrada = request.getParameter("hentrada");
+            String hsalida = request.getParameter("hsalida");
             String fecha = request.getParameter("fecha");
-            String Vparqueo = request.getParameter("valor_parqueo");
+            String Vparqueo = request.getParameter("Vparqueo");
             
             registro r = new registro();
             r.setLugar(lugar);
@@ -60,9 +60,9 @@
             try {
                 List<registro> lista = r.listarRegistro();
                 respuesta += "\"" + proceso + "\": true,\"registro\":" + new Gson().toJson(lista);
-            } catch (SQLException ex) {
+            } catch(Exception e){
                 respuesta += "\"" + proceso + "\": true,\"registro\":[]";
-                Logger.getLogger(registro.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(registro.class.getName()).log(Level.SEVERE, null, e);
             }
         }else if(proceso.equals("actualizarRegistro")){
             int id = Integer.getInteger(request.getParameter("id"));
